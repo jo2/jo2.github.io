@@ -119,8 +119,10 @@ span.wrapper.inline {
     left: 10px;
   }
 
-  a[title="Menu"], #navcolumn {
-    font-size: ;
+  #breadcrumbs {
+    position: sticky;
+    top: 0;
+    z-index: 5;
   }
 }
 
