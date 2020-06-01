@@ -95,9 +95,9 @@ span.wrapper.inline {
     float: none;
     width: auto;
     margin: 1.5em;
-    position: sticky;
+    position: relative;
     z-index: 5;
-    top: 20px;
+    /*top: 20px;*/
   }
 
   #bodyColumn {
@@ -118,14 +118,23 @@ span.wrapper.inline {
 
   a[title="Menu"] {
     display: inline-block;
-    position: absolute;
-    left: 10px;
   }
 
   #breadcrumbs {
     position: sticky;
     top: 0;
-    z-index: 5;
+    z-index: 10;
+  }
+
+  .xright {
+    display: flex;
+  }
+
+  .burger-bar {
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    margin: 2px 0;
   }
 }
 
