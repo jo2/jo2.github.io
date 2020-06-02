@@ -72,8 +72,20 @@ section {
   position: relative;
 }
 
-p, td, th, li, pre, #breadcrumbs span, #leftColumn a, #leftColumn strong, #navcolumn h5 {
+p, td, table.bodyTable td, th, table.bodyTable th, li, pre, #breadcrumbs span, #leftColumn a, #leftColumn strong, #navcolumn h5 {
   font-size: 17px;
+}
+
+#navcolumn li {
+  margin-bottom: 3px;
+}
+
+#bodyColumn {
+  margin-left: 297px;
+}
+
+#leftColumn {
+  width: 270px;
 }
 
 .releaseDate {
