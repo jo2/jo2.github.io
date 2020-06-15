@@ -59,12 +59,17 @@ const renderCollapsibleMenu = () => {
     const tmp1 = navBar.children[0];
     const tmp2 = navBar.children[1];
     const tmp3 = navBar.children[2];
-    navBar.innerHTML = "";
-    navBar.appendChild(tmp2);
-    navBar.appendChild(document.createTextNode("|"));
-    navBar.appendChild(tmp3);
-    navBar.appendChild(document.createTextNode("|"));
-    navBar.appendChild(tmp1);
+    console.log(tmp1);
+    console.log(tmp2);
+    console.log(tmp3);
+    if (tmp1.nodeName === 'A' && tmp2.nodeName === 'SPAN' && tmp3.nodeName === 'SPAN') {
+        navBar.innerHTML = "";
+        navBar.appendChild(tmp2);
+        navBar.appendChild(document.createTextNode("|"));
+        navBar.appendChild(tmp3);
+        navBar.appendChild(document.createTextNode("|"));
+        navBar.appendChild(tmp1);
+    }
 }
 
 window.addEventListener('load', renderCollapsibleMenu);
