@@ -104,6 +104,7 @@ a[title="toTop"] {
   padding: 5px;
   color: black;
   text-decoration: none;
+  z-index: 10;
 }
 
 @media screen and (max-width: 600px) {
@@ -134,12 +135,6 @@ a[title="toTop"] {
 
   a[title="Menu"] {
     display: inline-block;
-  }
-
-  #breadcrumbs {
-    position: sticky;
-    top: 0;
-    z-index: 10;
   }
 
   .xright {
