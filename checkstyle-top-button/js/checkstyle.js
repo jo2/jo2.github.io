@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('scroll', () => {
-    if (document.documentElement.scrollTop > 200) {
+    if (document.documentElement.scrollTop > 500) {
         scrollButton.style.display = 'block';
     } else {
         scrollButton.style.display = 'none';
