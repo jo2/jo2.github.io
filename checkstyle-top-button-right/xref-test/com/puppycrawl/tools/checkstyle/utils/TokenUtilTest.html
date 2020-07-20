@@ -285,7 +285,21 @@
 <a class="jxr_linenumber" name="L277" href="#L277">277</a>         assertEquals(secondSibling, firstChild, <span class="jxr_string">"Mismatched child node"</span>);
 <a class="jxr_linenumber" name="L278" href="#L278">278</a>     }
 <a class="jxr_linenumber" name="L279" href="#L279">279</a> 
-<a class="jxr_linenumber" name="L280" href="#L280">280</a> }
+<a class="jxr_linenumber" name="L280" href="#L280">280</a>     @Test
+<a class="jxr_linenumber" name="L281" href="#L281">281</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testIsTypeDeclaration() {
+<a class="jxr_linenumber" name="L282" href="#L282">282</a>         assertTrue(TokenUtil.isTypeDeclaration(TokenTypes.CLASS_DEF),
+<a class="jxr_linenumber" name="L283" href="#L283">283</a>                 <span class="jxr_string">"Should return true when valid type passed"</span>);
+<a class="jxr_linenumber" name="L284" href="#L284">284</a>         assertTrue(TokenUtil.isTypeDeclaration(TokenTypes.INTERFACE_DEF),
+<a class="jxr_linenumber" name="L285" href="#L285">285</a>                 <span class="jxr_string">"Should return true when valid type passed"</span>);
+<a class="jxr_linenumber" name="L286" href="#L286">286</a>         assertTrue(TokenUtil.isTypeDeclaration(TokenTypes.ANNOTATION_DEF),
+<a class="jxr_linenumber" name="L287" href="#L287">287</a>                 <span class="jxr_string">"Should return true when valid type passed"</span>);
+<a class="jxr_linenumber" name="L288" href="#L288">288</a>         assertTrue(TokenUtil.isTypeDeclaration(TokenTypes.ENUM_DEF),
+<a class="jxr_linenumber" name="L289" href="#L289">289</a>                 <span class="jxr_string">"Should return true when valid type passed"</span>);
+<a class="jxr_linenumber" name="L290" href="#L290">290</a>         assertTrue(TokenUtil.isTypeDeclaration(TokenTypes.RECORD_DEF),
+<a class="jxr_linenumber" name="L291" href="#L291">291</a>                 <span class="jxr_string">"Should return true when valid type passed"</span>);
+<a class="jxr_linenumber" name="L292" href="#L292">292</a>     }
+<a class="jxr_linenumber" name="L293" href="#L293">293</a> 
+<a class="jxr_linenumber" name="L294" href="#L294">294</a> }
 </pre>
 <hr/>
 <div id="footer">Copyright &#169; 2001&#x2013;2020. All rights reserved.</div>

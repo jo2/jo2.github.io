@@ -2,7 +2,7 @@ let scrollButton;
 
 window.addEventListener('load', () => {
     scrollButton = document.querySelector('a[title="toTop"]');
-    scrollButton.innerText = 'to Top';
+    scrollButton.innerText = 'To Top';
     scrollButton.style.display = 'none';
 
     scrollButton.addEventListener('click', (e) => {
